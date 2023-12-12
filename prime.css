@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#span{
+    background-color: blueviolet;
+}
+.drop-down{
+    background-color: brown;
+}
+.drop-down1{
+    background-color:gray ;
+}

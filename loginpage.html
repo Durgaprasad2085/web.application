@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Login Panel</h1>
+        <div class="col-md-8 col-md-offset-3">
+            <br/>
+            Enter name:
+            <input type="text" class="form-control"name=""id="fullname"><br/>
+            Enter Email:
+            <input type="text" class="form-control"name=""id="email"><br/>
+            Enter pass:
+            <input type="text" class="form-control"name=""id="pass"><br/>
+            <button type="button" onclick="login()" class="form-control btn btn-primary"><a href="prime.html"></a></button>
+        </div>
+
+    </div>
+    <script>
+        function login(){
+            let fullname,email,pass;
+            fullname=document.getElementById("fullname").value;
+            email=document.getElementById("email").value;
+            pass=document.getElementById("pass").value;
+            
+localStorage.setItem("fullname",fullname);
+localStorage.setItem("email",email);
+localStorage.setItem("pass",pass);
+        }
+            
+        
+    </script>
+</body>
+</html>
